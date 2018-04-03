@@ -36,12 +36,14 @@ namespace u2AidanMcClungTshirt
         {
             int input = 0;
             int.TryParse(txtInput.Text, out input);
+            //easter egg
             if (input > 9000)
             {
                 Label victory = new Label();
                 victory.Content = "That can't be right!";
                 shirtCanvas.Children.Add(victory);
             }
+            //make Chuck Norris pictures
             else
             {
 
@@ -60,11 +62,6 @@ namespace u2AidanMcClungTshirt
                     shirtCanvas.Children.Add(Frame);
                 }
             }
-        }
-
-        private void myGrid_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
-        {
-
         }
     }
 }
